@@ -31,19 +31,17 @@ export default function App() {
   const openEnvelope = () => {
     if (envelopeStage !== 'closed') return;
     setEnvelopeStage('lifting');
+    if (MUSIC_ENABLED !== false) {
+      setMusicOn(true);
+      play();
+    }
     setTimeout(() => setEnvelopeStage('opening'), 450);
     setTimeout(() => {
       setEnvelopeStage('letter');
       setBurstSeed(generateBurstSeed());
       setTimeout(() => setBurstSeed([]), 2600);
     }, 1750);
-    setTimeout(() => {
-      setEnvelopeStage('reveal');
-      if (MUSIC_ENABLED !== false) {
-        setMusicOn(true);
-        setTimeout(() => play(), 250);
-      }
-    }, 3050);
+    setTimeout(() => setEnvelopeStage('reveal'), 3050);
     setTimeout(() => {
       setEnvelopeStage('done');
       setEnvelopeDone(true);
@@ -87,8 +85,8 @@ export default function App() {
         <Hero countdownParts={countdownParts} scrollY={scrollY} tilt={heroTilt} onMove={onHeroMove} onLeave={onHeroLeave} />
         <OurStory />
         <EventDetails events={EVENTS} />
-        <LocationMaps events={EVENTS} />
         <RSVPForm />
+        <LocationMaps events={EVENTS} />
         <Footer />
       </div>
     </div>

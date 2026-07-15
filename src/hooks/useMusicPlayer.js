@@ -39,8 +39,16 @@ export function useMusicPlayer(musicUrl) {
 
   const play = useCallback(() => {
     if (isYouTube) {
-      postYT('setVolume', [MUSIC_VOLUME * 100]);
+      // Mobile autoplay policies reliably allow muted playback; unmute right
+      // after so it still counts as user-initiated. Also retry playVideo in
+      // case the player wasn't ready for the first command yet.
+      postYT('mute');
       postYT('playVideo');
+      setTimeout(() => {
+        postYT('playVideo');
+        postYT('setVolume', [MUSIC_VOLUME * 100]);
+        postYT('unMute');
+      }, 500);
     } else if (audioRef.current) {
       audioRef.current.volume = MUSIC_VOLUME;
       audioRef.current.play().catch(() => {});

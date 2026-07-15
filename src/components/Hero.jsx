@@ -72,17 +72,18 @@ export function Hero({ countdownParts, scrollY, tilt, onMove, onLeave }) {
           Bu özel günümüzde sizleri de aramızda görmekten mutluluk duyarız.
         </p>
 
-        <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: 'clamp(6px,2vw,14px)', justifyContent: 'center', flexWrap: 'nowrap' }}>
           {countdownParts.map((part) => (
             <div
               key={part.label}
               style={{
                 background: 'rgba(255,255,255,0.6)', backdropFilter: 'blur(6px)', border: '1px solid rgba(140,115,85,0.18)',
-                borderRadius: 14, padding: '16px 20px', minWidth: 76, boxShadow: '0 8px 24px rgba(90,70,40,0.08)',
+                borderRadius: 14, padding: 'clamp(10px,3vw,16px) clamp(6px,2.2vw,20px)', minWidth: 'clamp(58px,17vw,76px)',
+                boxShadow: '0 8px 24px rgba(90,70,40,0.08)', flex: '0 1 auto',
               }}
             >
-              <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, fontSize: 30, color: '#5c6b4f' }}>{part.value}</div>
-              <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 12, letterSpacing: 2, textTransform: 'uppercase', color: '#8a7355', marginTop: 2 }}>
+              <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, fontSize: 'clamp(19px,6vw,30px)', color: '#5c6b4f' }}>{part.value}</div>
+              <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(9px,2.3vw,12px)', letterSpacing: 1, textTransform: 'uppercase', color: '#8a7355', marginTop: 2, whiteSpace: 'nowrap' }}>
                 {part.label}
               </div>
             </div>
