@@ -4,10 +4,10 @@ export function Footer() {
   return (
     <footer style={{ padding: '64px 20px 50px', textAlign: 'center', background: '#f2ece0', position: 'relative', overflow: 'hidden' }}>
       <FlowerCornerA
-        style={{ position: 'absolute', bottom: -30, left: -30, width: 240, opacity: 1, pointerEvents: 'none' }}
+        style={{ position: 'absolute', bottom: -30, left: -30, width: 240, maxWidth: '26vw', opacity: 1, pointerEvents: 'none' }}
       />
       <FlowerCornerA
-        style={{ position: 'absolute', bottom: -30, right: -30, width: 240, opacity: 1, pointerEvents: 'none', transform: 'scaleX(-1)' }}
+        style={{ position: 'absolute', bottom: -30, right: -30, width: 240, maxWidth: '26vw', opacity: 1, pointerEvents: 'none', transform: 'scaleX(-1)' }}
       />
       <div style={{ position: 'relative', zIndex: 1 }}>
         <div style={{ fontFamily: "'Great Vibes',cursive", fontSize: 32, color: '#9c3159', marginBottom: 10 }}>

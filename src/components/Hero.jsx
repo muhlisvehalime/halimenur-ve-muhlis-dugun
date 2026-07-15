@@ -20,28 +20,28 @@ export function Hero({ countdownParts, scrollY, tilt, onMove, onLeave }) {
       />
       <FlowerCornerA
         style={{
-          position: 'absolute', top: 0, left: 0, width: 340, maxWidth: '38vw', opacity: 1, pointerEvents: 'none',
+          position: 'absolute', top: 0, left: 0, width: 340, maxWidth: '28vw', opacity: 1, pointerEvents: 'none',
           transform: `translate3d(${ht.x * -26}px, ${ht.y * -16 + parallax1 * 0.4}px, 0)`,
           transition: 'transform 0.25s ease-out',
         }}
       />
       <FlowerCornerA
         style={{
-          position: 'absolute', top: 0, right: 0, width: 340, maxWidth: '38vw', opacity: 1, pointerEvents: 'none',
+          position: 'absolute', top: 0, right: 0, width: 340, maxWidth: '28vw', opacity: 1, pointerEvents: 'none',
           transform: `scaleX(-1) translate3d(${ht.x * -26}px, ${ht.y * -16 + parallax1 * 0.4}px, 0)`,
           transition: 'transform 0.25s ease-out',
         }}
       />
       <FlowerCornerB
         style={{
-          position: 'absolute', bottom: 0, left: 0, width: 300, maxWidth: '34vw', opacity: 1, pointerEvents: 'none',
+          position: 'absolute', bottom: 0, left: 0, width: 300, maxWidth: '24vw', opacity: 1, pointerEvents: 'none',
           transform: `translate3d(${ht.x * -18}px, ${-ht.y * 14 - parallax2 * 0.3}px, 0)`,
           transition: 'transform 0.25s ease-out',
         }}
       />
       <FlowerCornerB
         style={{
-          position: 'absolute', bottom: 0, right: 0, width: 300, maxWidth: '34vw', opacity: 1, pointerEvents: 'none',
+          position: 'absolute', bottom: 0, right: 0, width: 300, maxWidth: '24vw', opacity: 1, pointerEvents: 'none',
           transform: `scaleX(-1) translate3d(${ht.x * 18}px, ${ht.y * 14 + parallax2 * 0.3}px, 0)`,
           transition: 'transform 0.25s ease-out',
         }}

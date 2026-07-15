@@ -47,7 +47,7 @@ export function RSVPForm() {
   return (
     <section style={{ padding: '120px 24px', background: '#f7f3ec', position: 'relative', overflow: 'hidden' }}>
       <FlowerCornerA
-        style={{ position: 'absolute', top: -30, left: -30, width: 240, opacity: 1, pointerEvents: 'none' }}
+        style={{ position: 'absolute', top: -30, left: -30, width: 240, maxWidth: '30vw', opacity: 1, pointerEvents: 'none' }}
       />
       <div style={{ maxWidth: 560, margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <div style={{ textAlign: 'center', marginBottom: 40 }}>

@@ -28,10 +28,10 @@ export function EnvelopeOverlay({ stage, onOpen, petalSeeds, burstSeeds }) {
       }}
     >
       <FlowerCornerA
-        style={{ position: 'absolute', top: -30, left: -30, width: 260, opacity: 1, pointerEvents: 'none' }}
+        style={{ position: 'absolute', top: -30, left: -30, width: 260, maxWidth: '32vw', opacity: 1, pointerEvents: 'none' }}
       />
       <FlowerCornerB
-        style={{ position: 'absolute', bottom: -30, right: -30, width: 260, transform: 'scaleX(-1)', opacity: 1, pointerEvents: 'none' }}
+        style={{ position: 'absolute', bottom: -30, right: -30, width: 260, maxWidth: '32vw', transform: 'scaleX(-1)', opacity: 1, pointerEvents: 'none' }}
       />
 
       <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden' }}>

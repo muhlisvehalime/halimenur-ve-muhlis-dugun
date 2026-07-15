@@ -46,12 +46,12 @@ export function EventDetails({ events }) {
   return (
     <section style={{ padding: '120px 24px', background: '#f7f3ec', position: 'relative', overflow: 'hidden' }}>
       <FlowerCornerB
-        style={{ position: 'absolute', top: -20, left: -30, width: 260, opacity: 1, pointerEvents: 'none' }}
+        style={{ position: 'absolute', top: -50, left: -40, width: 260, maxWidth: '26vw', opacity: 1, pointerEvents: 'none' }}
       />
       <FlowerCornerA
-        style={{ position: 'absolute', bottom: -30, right: -30, width: 280, opacity: 1, pointerEvents: 'none', transform: 'scaleX(-1)' }}
+        style={{ position: 'absolute', bottom: -30, right: -30, width: 280, maxWidth: '34vw', opacity: 1, pointerEvents: 'none', transform: 'scaleX(-1)' }}
       />
-      <div style={{ textAlign: 'center', marginBottom: 56, position: 'relative' }}>
+      <div style={{ textAlign: 'center', marginBottom: 56, position: 'relative', zIndex: 1 }}>
         <div style={{ fontFamily: "'Playfair Display',serif", fontStyle: 'italic', fontSize: 14, letterSpacing: 4, textTransform: 'uppercase', color: '#c9a24b', marginBottom: 14 }}>
           Ne Zaman, Nerede
         </div>

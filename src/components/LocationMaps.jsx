@@ -4,9 +4,9 @@ export function LocationMaps({ events }) {
   return (
     <section style={{ padding: '100px 24px', background: '#faf6ef', position: 'relative', overflow: 'hidden' }}>
       <FlowerCornerB
-        style={{ position: 'absolute', top: -10, right: -30, width: 240, opacity: 1, pointerEvents: 'none', transform: 'scaleX(-1)' }}
+        style={{ position: 'absolute', top: -10, right: -30, width: 240, maxWidth: '30vw', opacity: 1, pointerEvents: 'none', transform: 'scaleX(-1)' }}
       />
-      <div style={{ textAlign: 'center', marginBottom: 44, position: 'relative' }}>
+      <div style={{ textAlign: 'center', marginBottom: 44, position: 'relative', zIndex: 1 }}>
         <div style={{ fontFamily: "'Playfair Display',serif", fontStyle: 'italic', fontSize: 14, letterSpacing: 4, textTransform: 'uppercase', color: '#c9a24b', marginBottom: 14 }}>
           Yol Tarifi
         </div>
