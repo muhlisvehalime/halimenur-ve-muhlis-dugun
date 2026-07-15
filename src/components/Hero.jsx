@@ -1,0 +1,100 @@
+import { FlowerCornerA, FlowerCornerB } from './CornerFlowers';
+
+export function Hero({ countdownParts, scrollY, tilt, onMove, onLeave }) {
+  const parallax1 = scrollY * 0.06;
+  const parallax2 = scrollY * -0.04;
+  const ht = tilt;
+
+  return (
+    <section
+      onMouseMove={onMove}
+      onMouseLeave={onLeave}
+      style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', perspective: 1400 }}
+    >
+      <div
+        style={{
+          position: 'absolute', inset: '-10%',
+          background: 'radial-gradient(circle at 30% 20%, rgba(201,138,156,0.18), transparent 55%), radial-gradient(circle at 75% 80%, rgba(140,150,110,0.16), transparent 55%)',
+          transform: `translateY(${parallax1}px)`,
+        }}
+      />
+      <FlowerCornerA
+        style={{
+          position: 'absolute', top: 0, left: 0, width: 340, maxWidth: '38vw', opacity: 1, pointerEvents: 'none',
+          transform: `translate3d(${ht.x * -26}px, ${ht.y * -16 + parallax1 * 0.4}px, 0)`,
+          transition: 'transform 0.25s ease-out',
+        }}
+      />
+      <FlowerCornerA
+        style={{
+          position: 'absolute', top: 0, right: 0, width: 340, maxWidth: '38vw', opacity: 1, pointerEvents: 'none',
+          transform: `scaleX(-1) translate3d(${ht.x * -26}px, ${ht.y * -16 + parallax1 * 0.4}px, 0)`,
+          transition: 'transform 0.25s ease-out',
+        }}
+      />
+      <FlowerCornerB
+        style={{
+          position: 'absolute', bottom: 0, left: 0, width: 300, maxWidth: '34vw', opacity: 1, pointerEvents: 'none',
+          transform: `translate3d(${ht.x * -18}px, ${-ht.y * 14 - parallax2 * 0.3}px, 0)`,
+          transition: 'transform 0.25s ease-out',
+        }}
+      />
+      <FlowerCornerB
+        style={{
+          position: 'absolute', bottom: 0, right: 0, width: 300, maxWidth: '34vw', opacity: 1, pointerEvents: 'none',
+          transform: `scaleX(-1) translate3d(${ht.x * 18}px, ${ht.y * 14 + parallax2 * 0.3}px, 0)`,
+          transition: 'transform 0.25s ease-out',
+        }}
+      />
+
+      <div
+        style={{
+          position: 'relative', textAlign: 'center', padding: '40px 20px',
+          transform: `rotateX(${ht.y * 4}deg) rotateY(${ht.x * -4}deg)`, transition: 'transform 0.25s ease-out',
+        }}
+      >
+        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 15, letterSpacing: 5, textTransform: 'uppercase', color: '#8a7355', marginBottom: 18 }}>
+          Evleniyoruz
+        </div>
+        <h1 style={{ fontFamily: "'Great Vibes',cursive", fontSize: 'clamp(56px,10vw,108px)', lineHeight: 1.05, margin: 0, color: '#9c3159', textShadow: '0 2px 24px rgba(140,50,80,0.18)' }}>
+          Halime Nur
+        </h1>
+        <div style={{ fontFamily: "'Playfair Display',serif", fontStyle: 'italic', fontSize: 'clamp(26px,4vw,38px)', color: '#c9a24b', margin: '6px 0' }}>
+          &amp;
+        </div>
+        <h1 style={{ fontFamily: "'Great Vibes',cursive", fontSize: 'clamp(56px,10vw,108px)', lineHeight: 1.05, margin: 0, color: '#9c3159', textShadow: '0 2px 24px rgba(140,50,80,0.18)' }}>
+          Muhlis Erdem
+        </h1>
+
+        <div style={{ width: 120, height: 1, background: 'linear-gradient(90deg,transparent,#c9a24b,transparent)', margin: '34px auto' }} />
+
+        <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(17px,2vw,21px)', color: '#6b5d4c', maxWidth: 520, margin: '0 auto 40px', lineHeight: 1.7 }}>
+          Bu özel günümüzde sizleri de aramızda görmekten mutluluk duyarız.
+        </p>
+
+        <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
+          {countdownParts.map((part) => (
+            <div
+              key={part.label}
+              style={{
+                background: 'rgba(255,255,255,0.6)', backdropFilter: 'blur(6px)', border: '1px solid rgba(140,115,85,0.18)',
+                borderRadius: 14, padding: '16px 20px', minWidth: 76, boxShadow: '0 8px 24px rgba(90,70,40,0.08)',
+              }}
+            >
+              <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, fontSize: 30, color: '#5c6b4f' }}>{part.value}</div>
+              <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 12, letterSpacing: 2, textTransform: 'uppercase', color: '#8a7355', marginTop: 2 }}>
+                {part.label}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div style={{ marginTop: 44, fontFamily: "'Cormorant Garamond',serif", fontSize: 14, letterSpacing: 2, color: '#a08b6f' }}>
+          Aşağı kaydırın ↓
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Hero;
