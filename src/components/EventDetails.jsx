@@ -12,12 +12,9 @@ function EventCard({ ev }) {
           transform: `rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`, transition: 'transform 0.15s ease-out', transformStyle: 'preserve-3d',
         }}
       >
-        <div style={{ fontFamily: "'Playfair Display',serif", fontStyle: 'italic', fontSize: 13, letterSpacing: 3, textTransform: 'uppercase', color: '#c9a24b' }}>
-          {ev.kicker}
-        </div>
-        <div style={{ fontFamily: "'Great Vibes',cursive", fontSize: 48, color: '#9c3159', margin: '8px 0 18px' }}>{ev.title}</div>
+        <div style={{ fontFamily: "'Great Vibes',cursive", fontSize: 48, color: ev.titleColor || '#9c3159', margin: '0 0 18px' }}>{ev.title}</div>
         <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, fontSize: 32, color: '#5c6b4f' }}>{ev.date}</div>
-        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 18, letterSpacing: 1, color: '#a08b6f', margin: '4px 0 20px' }}>
+        <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 500, fontSize: 24, letterSpacing: 1, color: '#a08b6f', margin: '4px 0 20px' }}>
           {ev.time}
         </div>
         <div style={{ width: 56, height: 1, background: '#c9a24b', margin: '0 auto 20px', opacity: 0.5 }} />

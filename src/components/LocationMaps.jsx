@@ -7,10 +7,7 @@ export function LocationMaps({ events }) {
         style={{ position: 'absolute', top: -10, right: -30, width: 240, maxWidth: '30vw', opacity: 1, pointerEvents: 'none', transform: 'scaleX(-1)' }}
       />
       <div style={{ textAlign: 'center', marginBottom: 44, position: 'relative', zIndex: 1 }}>
-        <div style={{ fontFamily: "'Playfair Display',serif", fontStyle: 'italic', fontSize: 14, letterSpacing: 4, textTransform: 'uppercase', color: '#c9a24b', marginBottom: 14 }}>
-          Yol Tarifi
-        </div>
-        <h2 style={{ fontFamily: "'Great Vibes',cursive", fontSize: 'clamp(38px,5vw,56px)', color: '#9c3159', margin: 0 }}>Konumlar</h2>
+        <h2 style={{ fontFamily: "'Great Vibes',cursive", fontSize: 'clamp(30px,4.5vw,48px)', color: '#9c3159', margin: 0 }}>Konumlar / Yol Tarifi</h2>
       </div>
       <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', justifyContent: 'center', maxWidth: 1100, margin: '0 auto', position: 'relative', zIndex: 1 }}>
         {events.map((ev) => (

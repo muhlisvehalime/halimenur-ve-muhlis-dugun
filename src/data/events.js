@@ -4,9 +4,8 @@ const dugunAddress = 'ASFOR & ARUS Balo Nikah Salonu, Yunus Emre, Kayıkçı Sk.
 export const EVENTS = [
   {
     key: 'kina',
-    kicker: 'Kına Gecesi',
-    title: 'Kına',
-    date: '27 Ağustos',
+    title: 'Kına Gecesi',
+    date: '27 Ağustos 2026 Perşembe',
     time: '19:00',
     venue: 'Riva Balo Nikah Salonu',
     address: 'Acity Mall, Macun, Fatih Sultan Mehmet Bulvarı, Yenimahalle/Ankara',
@@ -15,9 +14,8 @@ export const EVENTS = [
   },
   {
     key: 'dugun',
-    kicker: 'Düğün Töreni',
-    title: 'Düğün',
-    date: '29 Ağustos',
+    title: 'Düğün Töreni',
+    date: '29 Ağustos 2026 Cumartesi',
     time: '13:00',
     venue: 'ASFOR & ARUS Balo Nikah Salonu',
     address: 'Yunus Emre, Kayıkçı Sk. no:8, 06145 Pursaklar/Ankara',

@@ -68,8 +68,11 @@ export function Hero({ countdownParts, scrollY, tilt, onMove, onLeave }) {
 
         <div style={{ width: 120, height: 1, background: 'linear-gradient(90deg,transparent,#c9a24b,transparent)', margin: '34px auto' }} />
 
-        <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(17px,2vw,21px)', color: '#6b5d4c', maxWidth: 520, margin: '0 auto 40px', lineHeight: 1.7 }}>
+        <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(17px,2vw,21px)', color: '#6b5d4c', maxWidth: 520, margin: '0 auto 12px', lineHeight: 1.7 }}>
           Bu özel günümüzde sizleri de aramızda görmekten mutluluk duyarız.
+        </p>
+        <p style={{ fontFamily: "'Cormorant Garamond',serif", fontStyle: 'italic', fontSize: 'clamp(14px,1.6vw,17px)', color: '#a08b6f', maxWidth: 520, margin: '0 auto 40px', lineHeight: 1.6 }}>
+          (29 Ağustos 2026 Cumartesi, saat 13:00 · ASFOR &amp; ARUS Balo Nikah Salonu, Pursaklar/Ankara)
         </p>
 
         <div style={{ display: 'flex', gap: 'clamp(6px,2vw,14px)', justifyContent: 'center', flexWrap: 'nowrap' }}>

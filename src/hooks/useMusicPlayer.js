@@ -3,8 +3,19 @@ import { MUSIC_VOLUME } from '../data/config';
 
 function getYouTubeId(url) {
   if (!url) return null;
-  const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
-  return m ? m[1] : null;
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes('youtu.be')) {
+      const id = u.pathname.slice(1);
+      return /^[a-zA-Z0-9_-]{11}$/.test(id) ? id : null;
+    }
+    const v = u.searchParams.get('v');
+    if (v && /^[a-zA-Z0-9_-]{11}$/.test(v)) return v;
+    const embedMatch = u.pathname.match(/\/embed\/([a-zA-Z0-9_-]{11})/);
+    return embedMatch ? embedMatch[1] : null;
+  } catch {
+    return null;
+  }
 }
 
 export function useMusicPlayer(musicUrl) {

@@ -1,6 +1,6 @@
 export const WEDDING_DATE = new Date('2026-08-29T13:00:00');
 export const MUSIC_ENABLED = true;
-export const MUSIC_URL = 'https://www.youtube.com/watch?v=unP0oxqUasE';
+export const MUSIC_URL = 'https://www.youtube.com/watch?app=desktop&v=L6StpOJV22w&list=PL7LTaPzr26hrugaJ0dEtw26Vg6OhJrhY-&index=51';
 export const MUSIC_VOLUME = 0.7;
 
 export const GOOGLE_FORM_ACTION_URL =
