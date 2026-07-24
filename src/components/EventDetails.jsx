@@ -14,6 +14,9 @@ function EventCard({ ev }) {
       >
         <div style={{ fontFamily: "'Great Vibes',cursive", fontSize: 48, color: ev.titleColor || '#9c3159', margin: '0 0 18px' }}>{ev.title}</div>
         <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, fontSize: 32, color: '#5c6b4f' }}>{ev.date}</div>
+        <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, fontSize: 20, color: '#5c6b4f' }}>
+          {ev.weekday}
+        </div>
         <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 500, fontSize: 24, letterSpacing: 1, color: '#a08b6f', margin: '4px 0 20px' }}>
           {ev.time}
         </div>

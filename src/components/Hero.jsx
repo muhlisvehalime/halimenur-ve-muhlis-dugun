@@ -53,7 +53,7 @@ export function Hero({ countdownParts, scrollY, tilt, onMove, onLeave }) {
           transform: `rotateX(${ht.y * 4}deg) rotateY(${ht.x * -4}deg)`, transition: 'transform 0.25s ease-out',
         }}
       >
-        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 15, letterSpacing: 5, textTransform: 'uppercase', color: '#8a7355', marginBottom: 18 }}>
+        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 15, fontWeight:'bold', letterSpacing: 5, textTransform: 'uppercase', color: '#8a7355', marginBottom: 18 }}>
           Evleniyoruz
         </div>
         <h1 style={{ fontFamily: "'Great Vibes',cursive", fontSize: 'clamp(56px,10vw,108px)', lineHeight: 1.05, margin: 0, color: '#9c3159', textShadow: '0 2px 24px rgba(140,50,80,0.18)' }}>
@@ -72,7 +72,7 @@ export function Hero({ countdownParts, scrollY, tilt, onMove, onLeave }) {
           Bu özel günümüzde sizleri de aramızda görmekten mutluluk duyarız.
         </p>
         <p style={{ fontFamily: "'Cormorant Garamond',serif", fontStyle: 'italic', fontSize: 'clamp(14px,1.6vw,17px)', color: '#a08b6f', maxWidth: 520, margin: '0 auto 40px', lineHeight: 1.6 }}>
-          (29 Ağustos 2026 Cumartesi, saat 13:00 · ASFOR &amp; ARUS Balo Nikah Salonu, Pursaklar/Ankara)
+          (29 Ağustos Cumartesi, saat 13:00 · Asfor Düğün Salonu, Pursaklar/Ankara)
         </p>
 
         <div style={{ display: 'flex', gap: 'clamp(6px,2vw,14px)', justifyContent: 'center', flexWrap: 'nowrap' }}>

@@ -11,12 +11,12 @@ export function Footer() {
       />
       <div style={{ position: 'relative', zIndex: 1 }}>
         <div style={{ fontFamily: "'Great Vibes',cursive", fontSize: 32, color: '#9c3159', marginBottom: 10 }}>
-          Halime Nur &amp; Muhlis Erdem
+          Halime Nur<span style={{ margin: '0 14px' }}>&amp;</span>Muhlis Erdem
         </div>
         <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 15, letterSpacing: 2, color: '#a08b6f' }}>
           Sevgiyle bekliyoruz · 2026
         </div>
-        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 12, letterSpacing: 1, color: '#c2b39c', marginTop: 28 }}>
+        <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 20, letterSpacing: 1, color: '#c2b39c', marginTop: 28 }}>
           Developed by Muhlis Erdem Yıldız
         </div>
       </div>

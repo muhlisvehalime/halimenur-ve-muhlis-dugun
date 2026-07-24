@@ -51,8 +51,8 @@ export function RSVPForm() {
       />
       <div style={{ maxWidth: 560, margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
-          <h2 style={{ fontFamily: "'Great Vibes',cursive", fontSize: 'clamp(38px,5vw,56px)', color: '#9c3159', margin: '0 0 14px' }}>Katılım Formu</h2>
-          <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 18, color: '#6b5d4c' }}>Lütfen 15 Ağustos'a kadar bize haber verin.</p>
+          <h2 style={{ fontFamily: "'Great Vibes',cursive", fontSize: 'clamp(38px,5vw,56px)', color: '#9c3159', margin: '0 0 14px' }}>Katılım    Formu</h2>
+          <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 18, color: '#6b5d4c' }}>Lütfen 20 Ağustos'a kadar bize haber verin.</p>
         </div>
 
         {!submitted && (

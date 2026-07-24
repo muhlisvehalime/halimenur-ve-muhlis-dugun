@@ -16,19 +16,21 @@ export function OurStory() {
         <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 'clamp(19px,2.4vw,24px)', lineHeight: 1.85, color: '#5c4a3a' }}>
           Tevafuklarla başlayan hikâyemiz, ömürlük bir birlikteliğe dönüşüyor. Ailelerimizin ve sevdiklerimizin desteğiyle, huzurunuzda birbirimize söz verirken sizleri de şahitliğe davet ediyoruz. Bu önemli günümüzde yanımızda olan ve dualarıyla gönlü bizimle olan herkese şimdiden teşekkür ederiz.
         </p>
-        <div style={{ width: 80, height: 1, background: '#c9a24b', margin: '36px auto', opacity: 0.5 }} />
+        <div style={{ width: 80, height: 1, background: '#c9a24b', margin: '36px auto', opacity: 0.49 }} />
         <div style={{ display: 'flex', justifyContent: 'center', gap: 60, flexWrap: 'wrap', fontFamily: "'Cormorant Garamond',serif", color: '#6b5d4c' }}>
           <div>
             <div style={{ fontSize: 14, letterSpacing: 1, textTransform: 'uppercase', color: '#a08b6f' }}>EVİS Ailesi</div>
             <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, color: '#5c6b4f', marginBottom: 4 }}>
-              Ayşenur ve Zafer
+              Ayşe Nur ve Zafer
             </div>
+            <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, color: '#5c6b4f', marginBottom: 4 }}>Evis</div>
           </div>
           <div>
             <div style={{ fontSize: 14, letterSpacing: 1, textTransform: 'uppercase', color: '#a08b6f' }}>YILDIZ Ailesi</div>
             <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, color: '#5c6b4f', marginBottom: 4 }}>
               Müzeyyen ve Ahmet Turan
             </div>
+            <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, color: '#5c6b4f', marginBottom: 4 }}>Yıldız</div>
           </div>
         </div>
       </div>
