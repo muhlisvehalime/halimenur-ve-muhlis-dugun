@@ -93,8 +93,18 @@ export function Hero({ countdownParts, scrollY, tilt, onMove, onLeave }) {
           ))}
         </div>
 
-        <div style={{ marginTop: 44, fontFamily: "'Cormorant Garamond',serif", fontSize: 14, letterSpacing: 2, color: '#a08b6f' }}>
-          Aşağı kaydırın ↓
+        <div
+          onClick={() => document.getElementById('katilim-formu')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+          style={{
+            marginTop: 44, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, cursor: 'pointer',
+          }}
+        >
+          <div style={{ fontFamily: "'Cormorant Garamond',serif", fontWeight: 600, fontSize: 20, letterSpacing: 3, textTransform: 'uppercase', color: '#8a7355' }}>
+            Aşağı Kaydırın
+          </div>
+          <svg width="26" height="16" viewBox="0 0 26 16" style={{ animation: 'scrollChevron 1.6s ease-in-out infinite' }}>
+            <path d="M2 2 L13 12 L24 2" fill="none" stroke="#9c3159" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
         </div>
       </div>
     </section>
