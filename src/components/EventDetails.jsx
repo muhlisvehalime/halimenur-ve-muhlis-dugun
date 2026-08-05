@@ -13,6 +13,17 @@ function EventCard({ ev }) {
         }}
       >
         <div style={{ fontFamily: "'Great Vibes',cursive", fontSize: 48, color: ev.titleColor || '#9c3159', margin: '0 0 18px' }}>{ev.title}</div>
+        {ev.note && (
+          <div
+            style={{
+              display: 'inline-block', fontFamily: "'Cormorant Garamond',serif", fontStyle: 'italic', fontSize: 14,
+              letterSpacing: 1, color: '#8a3a5e', background: 'rgba(138,58,94,0.08)', border: '1px solid rgba(138,58,94,0.25)',
+              borderRadius: 20, padding: '4px 14px', marginBottom: 18,
+            }}
+          >
+            {ev.note}
+          </div>
+        )}
         <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, fontSize: 32, color: '#5c6b4f' }}>{ev.date}</div>
         <div style={{ fontFamily: "'Playfair Display',serif", fontWeight: 600, fontSize: 20, color: '#5c6b4f' }}>
           {ev.weekday}

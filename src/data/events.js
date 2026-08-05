@@ -5,6 +5,7 @@ export const EVENTS = [
   {
     key: 'kina',
     title: 'Kına Gecesi',
+    note: 'Sadece hanımlara özeldir',
     date: '27 Ağustos',
     weekday: 'Perşembe',
     time: '19:00',
